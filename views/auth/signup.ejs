@@ -1,0 +1,46 @@
+<!-- <div class="signup">
+  <h1>Sign Up</h1>
+  <form class="form" method="POST" action="/auth/signup">
+    <div class="textbox">
+      <span class="material-symbols-outlined"> account_circle </span>
+      <label for="">Username:</label>
+      <input type="text" name="username" />
+    </div>
+    <div class="textbox">
+      <span class="material-symbols-outlined"> mail </span>
+      <label for="email">Email:</label>
+      <input type="email" name="email" />
+    </div>
+    <div class="textbox">
+      <span class="material-symbols-outlined"> vpn_key </span>
+      <label for="">Password:</label>
+      <input type="password" name="password" />
+    </div>
+    <button type="submit">signUp</button>
+  </form>
+</div> -->
+
+<div class="signup">
+  <h1>Sign Up</h1>
+  <form class="form" method="POST" action="/auth/signup">
+    <div class="textbox">
+      <input type="text" id="usernameSignUp" name="username" />
+      <label for="usernameSignUp">Username</label>
+      <span class="material-symbols-outlined"> account_circle </span>
+    </div>
+    <div class="textbox">
+      <input type="email" id="emailSignUp" name="email" />
+      <label for="emailSignUp">Email</label>
+      <span class="material-symbols-outlined"> mail </span>
+    </div>
+    <div class="textbox">
+      <input type="password" id="passwordSignUp" name="password" />
+      <label for="passwordSignUp">Password</label>
+      <span class="material-symbols-outlined"> vpn_key </span>
+    </div>
+    <div class="btn-container">
+      <button class="button" type="submit">signUp</button>
+    </div>
+    <p>Signed up already? login <a href="/auth/login">here</a></p>
+  </form>
+</div>

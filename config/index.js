@@ -1,7 +1,7 @@
 // We reuse this import in order to have access to the `body` property in requests
 const express = require('express')
 
-// Handles EJS
+// Handles ejs
 const expressLayouts = require('express-ejs-layouts')
 
 // ℹ️ Responsible for the messages you see in the terminal as requests are coming in
@@ -32,9 +32,10 @@ module.exports = app => {
 
   // Normalizes the path to the views folder
   app.set('views', path.join(__dirname, '..', 'views'))
-  // Sets the view engine to EJS
+  // Sets the view engine to ejs
   app.set('view engine', 'ejs')
   app.use(expressLayouts)
+  app.set('view options', { layout: 'layout.ejs' })
   // Handles access to the public folder
   app.use(express.static(path.join(__dirname, '..', 'public')))
 

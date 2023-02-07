@@ -1,0 +1,26 @@
+<!-- <h1>Login</h1>
+<form class="form" style="display: flex; flex-direction: column" method="POST" action="/auth/login">
+  <label>Username: <input type="text" name="username" /></label>
+  <label>Password: <input type="password" name="password" required /></label>
+  <button type="submit">LogIn</button>
+</form> -->
+
+<div class="signup">
+  <h1>Login</h1>
+  <form class="form" method="POST" action="/auth/login">
+    <div class="textbox">
+      <input type="text" id="usernameLogin" name="username" />
+      <label for="usernameLogin">Username</label>
+      <span class="material-symbols-outlined"> account_circle </span>
+    </div>
+    <div class="textbox">
+      <input type="password" id="passwordLogin" name="password" />
+      <label for="passwordLogin">Password</label>
+      <span class="material-symbols-outlined"> vpn_key </span>
+    </div>
+    <div class="btn-container">
+      <button class="button" type="submit">LogIn</button>
+    </div>
+    <p>Don't have an account yet? sign up <a href="/auth/signup">here</a></p>
+  </form>
+</div>
